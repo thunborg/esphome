@@ -152,12 +152,6 @@ def validate_phases(val):
     return base_validated
 
 
-def _vue3_branch_removed(config):
-    raise cv.Invalid(
-        "The `vue3` branch is no longer maintained. Migrate to the `@dev` branch "
-        "and set `variant: vue3` on this component. "
-        "See https://emporia-vue-local.github.io/docs/tutorial/configuration/"
-    )
 
 
 CONFIG_SCHEMA = cv.All(
